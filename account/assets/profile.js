@@ -1,7 +1,5 @@
 const ProfileInformation=[{
-    name:"Ermias Tiruneh",
-    Block:20,
-    Room:114,
+
     Email:'Ermias@gmail.com',
     Phone:09171988,
     image:"../Resources/images/avatar.png",

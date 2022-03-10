@@ -100,8 +100,6 @@ function appendElements(item)
             
         }
      
-        
-
         })
 
    
@@ -299,7 +297,9 @@ const lists = document.getElementsByTagName('li')
 console.log(lists)
 
 listArray = Array.from(lists)
+
 console.log(listArray)
+
 listArray.forEach(list => {
 
     list.addEventListener('click', () =>
@@ -307,8 +307,7 @@ listArray.forEach(list => {
         console.log(list.id)
             fetch("./assets/js/data.json").then(response => response.json()).then(data => {
         filtered = data.filter(d => {
-            return (d.Type == list.id ||d.Lounge == list.id)
-            
+            return (d.Type == list.id ||d.Lounge == list.id ||d.Price == list.id)      
         })
                 console.log(filtered)
                 showElements(filtered)

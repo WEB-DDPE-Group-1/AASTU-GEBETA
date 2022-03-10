@@ -12,8 +12,7 @@ const emailLog = document.querySelector('#emailLog')
 const passLog = document.querySelector('#passLog')
 
 
-    userDesk.addEventListener('input', () => {
-
+userDesk.addEventListener('input', () => {
         localStorage.setItem("userName", userDesk.value)
     })
 

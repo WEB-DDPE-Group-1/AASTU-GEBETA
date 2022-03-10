@@ -38,16 +38,11 @@ const Lounges=[{
 
 const main = document.querySelector('.main');
 var buttons = document.querySelectorAll('.btns');
-var newDiv= document.createElement('div');
 
-newDiv.className = "newdiv"
 
-i=0;
 buttons.forEach((button)=>{
     button.addEventListener('click',()=>{
 
-       console.log(button.id);
-       i++ 
        main.style.animation = "none"
        loungePick(button.id)
       
@@ -61,7 +56,7 @@ buttons.forEach((button)=>{
     })
 })
 
-i=0
+
 function loungePick(idName)
 {
     Lounges.forEach((lounge)=>

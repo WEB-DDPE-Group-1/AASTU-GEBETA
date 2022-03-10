@@ -76,6 +76,7 @@ next.addEventListener('click', () => {
             }
         }
 })
+
 const modal = document.querySelector('.modal');
 
 
@@ -161,7 +162,7 @@ document.addEventListener('click', (e) => {
                     document.querySelector('.foodSelectedDescribe').innerHTML = element.About
                     document.querySelector('.loungeSelected').innerHTML = element.Lounge
                     x = document.querySelector('#wishList')
-                        x.className = element.Name
+                    x.className = element.Name
 
                     x.addEventListener('click', () => {
                          obj.push(element.Name)
